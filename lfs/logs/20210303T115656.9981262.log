@@ -1,0 +1,134 @@
+git-lfs/2.11.0 (GitHub; windows amd64; go 1.14.2; git 48b28d97)
+git version 2.28.0.windows.1
+
+$ git-lfs smudge "status-info-light.png"
+Error downloading object: "status-info-light.png" (ee8d108): Smudge error: Error downloading "status-info-light.png" (ee8d108d91bf1d3fa50e96572d7e9e3ffaab6a8d0d5a849c538c495a19122e8b): batch response: Rate limit exceeded: https://github.com/Kim-daekyung/pangame.git/info/lfs/objects/batch
+
+Rate limit exceeded: https://github.com/Kim-daekyung/pangame.git/info/lfs/objects/batch
+github.com/git-lfs/git-lfs/errors.Errorf
+	d:/a/git-lfs/git-lfs/errors/errors.go:69
+github.com/git-lfs/git-lfs/lfshttp.defaultError
+	d:/a/git-lfs/git-lfs/lfshttp/errors.go:128
+github.com/git-lfs/git-lfs/lfshttp.(*Client).handleResponse
+	d:/a/git-lfs/git-lfs/lfshttp/errors.go:51
+github.com/git-lfs/git-lfs/lfshttp.(*Client).DoWithRedirect
+	d:/a/git-lfs/git-lfs/lfshttp/client.go:326
+github.com/git-lfs/git-lfs/lfsapi.(*Client).doWithCreds
+	d:/a/git-lfs/git-lfs/lfsapi/auth.go:103
+github.com/git-lfs/git-lfs/lfsapi.(*Client).doWithAuth
+	d:/a/git-lfs/git-lfs/lfsapi/auth.go:67
+github.com/git-lfs/git-lfs/lfsapi.(*Client).DoWithAuth
+	d:/a/git-lfs/git-lfs/lfsapi/auth.go:25
+github.com/git-lfs/git-lfs/lfsapi.(*Client).DoAPIRequestWithAuth
+	d:/a/git-lfs/git-lfs/lfsapi/auth.go:56
+github.com/git-lfs/git-lfs/tq.(*tqClient).Batch
+	d:/a/git-lfs/git-lfs/tq/api.go:74
+github.com/git-lfs/git-lfs/tq.Batch
+	d:/a/git-lfs/git-lfs/tq/api.go:40
+github.com/git-lfs/git-lfs/tq.(*TransferQueue).enqueueAndCollectRetriesFor
+	d:/a/git-lfs/git-lfs/tq/transfer_queue.go:559
+github.com/git-lfs/git-lfs/tq.(*TransferQueue).collectBatches.func1
+	d:/a/git-lfs/git-lfs/tq/transfer_queue.go:453
+runtime.goexit
+	go/src/runtime/asm_amd64.s:1373
+batch response
+github.com/git-lfs/git-lfs/errors.newWrappedError
+	d:/a/git-lfs/git-lfs/errors/types.go:198
+github.com/git-lfs/git-lfs/errors.Wrap
+	d:/a/git-lfs/git-lfs/errors/errors.go:74
+github.com/git-lfs/git-lfs/tq.(*tqClient).Batch
+	d:/a/git-lfs/git-lfs/tq/api.go:77
+github.com/git-lfs/git-lfs/tq.Batch
+	d:/a/git-lfs/git-lfs/tq/api.go:40
+github.com/git-lfs/git-lfs/tq.(*TransferQueue).enqueueAndCollectRetriesFor
+	d:/a/git-lfs/git-lfs/tq/transfer_queue.go:559
+github.com/git-lfs/git-lfs/tq.(*TransferQueue).collectBatches.func1
+	d:/a/git-lfs/git-lfs/tq/transfer_queue.go:453
+runtime.goexit
+	go/src/runtime/asm_amd64.s:1373
+Error downloading "status-info-light.png" (ee8d108d91bf1d3fa50e96572d7e9e3ffaab6a8d0d5a849c538c495a19122e8b)
+github.com/git-lfs/git-lfs/errors.newWrappedError
+	d:/a/git-lfs/git-lfs/errors/types.go:198
+github.com/git-lfs/git-lfs/errors.Wrapf
+	d:/a/git-lfs/git-lfs/errors/errors.go:85
+github.com/git-lfs/git-lfs/lfs.(*GitFilter).downloadFile
+	d:/a/git-lfs/git-lfs/lfs/gitfilter_smudge.go:115
+github.com/git-lfs/git-lfs/lfs.(*GitFilter).Smudge
+	d:/a/git-lfs/git-lfs/lfs/gitfilter_smudge.go:76
+github.com/git-lfs/git-lfs/commands.smudge
+	d:/a/git-lfs/git-lfs/commands/command_smudge.go:127
+github.com/git-lfs/git-lfs/commands.smudgeCommand
+	d:/a/git-lfs/git-lfs/commands/command_smudge.go:161
+github.com/spf13/cobra.(*Command).execute
+	go/pkg/mod/github.com/spf13/cobra@v0.0.3/command.go:766
+github.com/spf13/cobra.(*Command).ExecuteC
+	go/pkg/mod/github.com/spf13/cobra@v0.0.3/command.go:852
+github.com/spf13/cobra.(*Command).Execute
+	go/pkg/mod/github.com/spf13/cobra@v0.0.3/command.go:800
+github.com/git-lfs/git-lfs/commands.Run
+	d:/a/git-lfs/git-lfs/commands/run.go:103
+main.main
+	d:/a/git-lfs/git-lfs/git-lfs.go:33
+runtime.main
+	go/src/runtime/proc.go:203
+runtime.goexit
+	go/src/runtime/asm_amd64.s:1373
+Smudge error
+github.com/git-lfs/git-lfs/errors.newWrappedError
+	d:/a/git-lfs/git-lfs/errors/types.go:198
+github.com/git-lfs/git-lfs/errors.NewSmudgeError
+	d:/a/git-lfs/git-lfs/errors/types.go:284
+github.com/git-lfs/git-lfs/lfs.(*GitFilter).Smudge
+	d:/a/git-lfs/git-lfs/lfs/gitfilter_smudge.go:85
+github.com/git-lfs/git-lfs/commands.smudge
+	d:/a/git-lfs/git-lfs/commands/command_smudge.go:127
+github.com/git-lfs/git-lfs/commands.smudgeCommand
+	d:/a/git-lfs/git-lfs/commands/command_smudge.go:161
+github.com/spf13/cobra.(*Command).execute
+	go/pkg/mod/github.com/spf13/cobra@v0.0.3/command.go:766
+github.com/spf13/cobra.(*Command).ExecuteC
+	go/pkg/mod/github.com/spf13/cobra@v0.0.3/command.go:852
+github.com/spf13/cobra.(*Command).Execute
+	go/pkg/mod/github.com/spf13/cobra@v0.0.3/command.go:800
+github.com/git-lfs/git-lfs/commands.Run
+	d:/a/git-lfs/git-lfs/commands/run.go:103
+main.main
+	d:/a/git-lfs/git-lfs/git-lfs.go:33
+runtime.main
+	go/src/runtime/proc.go:203
+runtime.goexit
+	go/src/runtime/asm_amd64.s:1373
+
+Current time in UTC: 
+2021-03-03 02:56:57
+
+ENV:
+LocalWorkingDir=
+LocalGitDir=
+LocalGitStorageDir=
+LocalMediaDir=lfs\objects
+LocalReferenceDirs=
+TempDir=lfs\tmp
+ConcurrentTransfers=8
+TusTransfers=false
+BasicTransfersOnly=false
+SkipDownloadErrors=false
+FetchRecentAlways=false
+FetchRecentRefsDays=7
+FetchRecentCommitsDays=0
+FetchRecentRefsIncludeRemotes=true
+PruneOffsetDays=3
+PruneVerifyRemoteAlways=false
+PruneRemoteName=origin
+LfsStorageDir=lfs
+AccessDownload=none
+AccessUpload=none
+DownloadTransfers=basic,lfs-standalone-file
+UploadTransfers=basic,lfs-standalone-file
+GIT_EXEC_PATH=C:/Program Files/Git/mingw64/libexec/git-core
+GIT_TERMINAL_PROMPT=0
+
+Client IP addresses:
+fe80::bc0b:b9fb:7085:8ea2 10.80.162.165
+62.165
+65
